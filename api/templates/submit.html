@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>submit </title>
+    <style>
+    body {
+        font-family: Helvetica;
+    }
+    #submit_button
+    {
+        position:relative;
+        top: 80%;
+        left: 85%;
+        height: 20px;
+        width: 45px;
+        font-size: 10px;
+        text-align: center;
+        background-color: #24AAEF;
+    }
+
+    #til_container {
+        background-color: #D3D3D3;
+        border-radius: 1x;
+        border: 1px solid #D3D3D3;
+        margin: 0px 0px 0px 0px;
+    }
+    #til_input {
+        padding: 50px;
+        font-size: 10px;
+        width: 100%;
+    }
+    </style>
+
+</head>
+<body>
+
+<div id="til_container">
+    <marquee behaviour="scroll" direction="left">Write the things you learned today</marquee>
+
+    <div class="input">
+        <form action="/" method="POST">
+            <input id="til_input" name="content">
+            <input id="submit_button"  type="submit" value="Submit">
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
