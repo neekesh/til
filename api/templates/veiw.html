@@ -6,16 +6,20 @@
 <body>
 <p>Here is the things that you have learned till now</p>
 <table>
-        <tr>
-            <th>date_created</th>
-            <th> Things you learned </th>
-        </tr>
+    <tr>
         {%for til in tild%}
-            <tr>
-                <td>{{til.date_created.date()}}</td>
-                <td>{{til.content}}</td>
-            </tr>
-        {% endfor %}
-    </table>
+
+    <ul style="color:red">date_created: {{til.date_created.date()}}</ul>
+    </tr>
+    <tr>
+    <ul style="color:red"> Things you learned </ul>
+
+    <ul>{{til.content}}</ul>
+
+    {% endfor %}
+
+    </tr>
+</table>
+
 </body>
 </html>
