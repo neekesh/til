@@ -8,13 +8,16 @@
 <table>
     <tr>
         {%for til in tild%}
+<ul>
+    <li style="color:red">date_created: {{til.date_created.date()}}</li>
+</ul>
 
-    <ul style="color:red">date_created: {{til.date_created.date()}}</ul>
     </tr>
     <tr>
-    <ul style="color:red"> Things you learned </ul>
-
-    <ul>{{til.content}}</ul>
+        <ul>
+    <li style="color:red"> Things you learned</li>
+    <li>{{til.content}}</li>
+    </ul>
 
     {% endfor %}
 
